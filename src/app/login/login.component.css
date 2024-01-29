@@ -1,0 +1,32 @@
+div.container {
+    display: block;
+    text-align: center;
+    max-width: 50%;
+}
+
+.card {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 10vh;
+
+}
+
+.card-body {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.img-fluid {
+    margin-bottom: 40px;
+}
+
+form {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
