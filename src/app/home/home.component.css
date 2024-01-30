@@ -22,14 +22,25 @@
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: #F03582;
-    border: 2px solid #c02361;
+    color: var(--color-girl-pink-text);
+    border: 2px solid var(--color-girl-pink-border);
     border-radius: 100vw;
     background-color: transparent;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
   }
+
+  .button:hover {
+    color: var(--color-girl-white-text);
+    scale: 1.1;
+    box-shadow: 0 0px 20px var(--color-girl-pink-border);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
   
   .button::before {
     content: '';
@@ -41,7 +52,7 @@
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: #c02361;
+    background-color: var(--color-girl-pink-border);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -49,15 +60,7 @@
     scale: 3;
   }
   
-  .button:hover {
-    color: rgb(242, 214, 214);
-    scale: 1.1;
-    box-shadow: 0 0px 20px #c02361
-  }
-  
-  .button:active {
-    scale: 1;
-  }
+
 
   .anim {
     opacity: 0;

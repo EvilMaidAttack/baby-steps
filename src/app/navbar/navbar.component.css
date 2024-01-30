@@ -38,8 +38,44 @@ a.navbar-brand {
 
 .button {
     cursor: pointer;
+    position: relative;
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 8px 15px;
     font-weight: 500;
+    background-color: transparent;
+    border-radius: 100vw;
+    border: 2px solid var(--color-girl-pink-border);
+    color: var(--color-girl-pink-text);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.button:hover {
+    scale: 1.1;
+    color: var(--color-girl-white-text);
+    box-shadow: 0 0px 20px var(--color-girl-pink-border);
 
 }
+
+.button:active{
+    scale: 1;
+}
+
+.button-anim::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    scale: 0;
+    background-color: var(--color-girl-pink-border);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button-anim:hover::before{
+    scale: 2;
+}
+

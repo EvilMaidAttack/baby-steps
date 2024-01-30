@@ -2,6 +2,12 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+:root{
+    --color-girl-pink-text: #F03582;
+    --color-girl-pink-border: #c02361;;
+    --color-girl-white-text: rgb(242, 214, 214);
+}
+
 body {
     background: linear-gradient(to bottom right, #ffffff 20%, #ffccdd);
     height: 100vh;
