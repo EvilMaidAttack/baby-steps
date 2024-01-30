@@ -3,7 +3,7 @@
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
 body {
-    background: linear-gradient(to bottom right, #ffffff 60%, #ffccdd);
+    background: linear-gradient(to bottom right, #ffffff 20%, #ffccdd);
     height: 100vh;
 }
 

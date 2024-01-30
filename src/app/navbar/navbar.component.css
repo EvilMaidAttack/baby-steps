@@ -16,7 +16,7 @@ a.navbar-brand {
     position: relative;
 }
 
-.nav-link::after {
+.navable::after {
     content: '';
     opacity: 0;
     transition: all 0.2s;
@@ -28,10 +28,18 @@ a.navbar-brand {
     left: 0;
 }
 
-.nav-link:hover::after {
+.navable:hover::after {
     opacity: 1;
 }
 
-.nav-link.active::after {
+.navable.active::after {
     opacity: 1;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 500;
+
 }

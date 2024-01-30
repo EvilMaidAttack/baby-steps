@@ -23,7 +23,7 @@
     padding: 10px 24px;
     font-size: 18px;
     color: #F03582;
-    border: 2px solid #F03582;
+    border: 2px solid #c02361;
     border-radius: 100vw;
     background-color: transparent;
     font-weight: 600;
@@ -80,10 +80,11 @@
     animation-delay: 1.2s;
   }
 
-  .home-text button {
-    animation-delay: 1.9s;
-  }
 
   .home-asset img {
-    animation-delay: 2.6s
+    animation-delay: 1.9s
+  }
+
+  .home-text button {
+    animation-delay: 2.6s;
   }
