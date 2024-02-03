@@ -1,0 +1,45 @@
+
+.checkbox-container {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    margin-right: 30px;
+    background-color: transparent;
+    user-select: none;
+    border-radius: 100vw;
+    border: 2px var(--color-girl-pink-border) solid;
+    top: 6px;
+}
+
+
+.checkbox-input {
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.checkbox-input::before{
+    content: "";
+    position: absolute;
+    visibility: visible;
+    margin: auto;
+    inset: 0;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-girl-pink-text);
+    overflow: hidden;
+    border-radius: 100vw;
+    left: -40px;
+    top: -12px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.checkbox-input:checked::before {
+    transform: translateX(28px);
+    background-color: var(--color-boy-blue-text);
+}
+
+
+
+

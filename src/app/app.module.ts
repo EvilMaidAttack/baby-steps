@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { FormsModule } from '@angular/forms';
+import { SchemeTogglerComponent } from './scheme-toggler/scheme-toggler.component';
+import { ThemeService } from './theme.service';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    SchemeTogglerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,7 @@ import { FormsModule } from '@angular/forms';
       {path: '', redirectTo: '/home', pathMatch: 'full' }
     ])
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
