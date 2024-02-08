@@ -5,9 +5,11 @@
 :root{
     --color-girl-pink-text: #F03582;
     --color-girl-pink-border: #c02361;
+    --color-girl-background: #ffccdd;
 
     --color-boy-blue-text: #48B6DB;
     --color-boy-blue-border: #1B4E6D;
+    --color-boy-background: #b7e8f7;
 
     --color-theme-background: #ffccdd;
     --color-theme-text: #F03582;
@@ -15,8 +17,4 @@
     --color-theme-white: rgb(242, 214, 214);
 }
 
-body {
-    background: linear-gradient(to bottom right, #ffffff 20%, var(--color-theme-background));
-    height: 100vh;
-    background-size: cover;
-}
+

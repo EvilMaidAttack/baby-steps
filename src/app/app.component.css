@@ -1,0 +1,8 @@
+.isMale {
+    --color-theme-background: var(--color-boy-background);
+}
+
+.content {
+    background: linear-gradient(to bottom right, #ffffff 20%, var(--color-theme-background));
+    min-height: 100vh;
+}

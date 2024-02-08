@@ -1,3 +1,7 @@
+.isMale {
+    --color-theme-border: var(--color-boy-blue-border);
+    --color-theme-text: var(--color-boy-blue-text);
+}
 
 .checkbox-container {
     cursor: pointer;
@@ -8,7 +12,7 @@
     background-color: transparent;
     user-select: none;
     border-radius: 100vw;
-    border: 2px var(--color-girl-pink-border) solid;
+    border: 2px var(--color-theme-border) solid;
     top: 6px;
 }
 
@@ -27,7 +31,7 @@
     inset: 0;
     width: 25px;
     height: 25px;
-    background-color: var(--color-girl-pink-text);
+    background-color: var(--color-theme-text);
     overflow: hidden;
     border-radius: 100vw;
     left: -40px;
@@ -37,7 +41,7 @@
 
 .checkbox-input:checked::before {
     transform: translateX(28px);
-    background-color: var(--color-boy-blue-text);
+    background-color: var(--color-theme-text);
 }
 
 
