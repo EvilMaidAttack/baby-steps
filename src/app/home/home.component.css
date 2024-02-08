@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
-
 }
     
 
@@ -22,8 +21,8 @@
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: var(--color-girl-pink-text);
-    border: 2px solid var(--color-girl-pink-border);
+    color: var(--color-theme-text);
+    border: 2px solid var(--color-theme-border);
     border-radius: 100vw;
     background-color: transparent;
     font-weight: 600;
@@ -32,15 +31,14 @@
   }
 
   .button:hover {
-    color: var(--color-girl-white-text);
+    color: var(--color-theme-white);
     scale: 1.1;
-    box-shadow: 0 0px 20px var(--color-girl-pink-border);
+    box-shadow: 0 0px 20px var(--color-theme-border);
   }
   
   .button:active {
     scale: 1;
   }
-  
   
   .button::before {
     content: '';
@@ -52,7 +50,7 @@
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: var(--color-girl-pink-border);
+    background-color: var(--color-theme-border);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -60,6 +58,10 @@
     scale: 3;
   }
   
+  .isMale {
+    --color-theme-border: var(--color-boy-blue-border);
+    --color-theme-text: var(--color-boy-blue-text);
+  }
 
 
   .anim {

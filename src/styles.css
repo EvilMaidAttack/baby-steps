@@ -4,14 +4,19 @@
 
 :root{
     --color-girl-pink-text: #F03582;
-    --color-girl-pink-border: #c02361;;
-    --color-girl-white-text: rgb(242, 214, 214);
+    --color-girl-pink-border: #c02361;
+
     --color-boy-blue-text: #48B6DB;
     --color-boy-blue-border: #1B4E6D;
+
+    --color-theme-background: #ffccdd;
+    --color-theme-text: #F03582;
+    --color-theme-border: #c02361;
+    --color-theme-white: rgb(242, 214, 214);
 }
 
 body {
-    background: linear-gradient(to bottom right, #ffffff 20%, #ffccdd);
+    background: linear-gradient(to bottom right, #ffffff 20%, var(--color-theme-background));
     height: 100vh;
+    background-size: cover;
 }
-

@@ -15,15 +15,14 @@ export class SchemeTogglerComponent implements OnInit{
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(){
-    this.isMaleSubscription = this.themeService.getIsMale().subscribe(
+    this.isMaleSubscription = this.themeService.isMale$.subscribe(
       (value) => this.isMale = value)
-      console.log("from toggler: " + this.isMale);
-      
+      //console.log("from toggler: " + this.isMale);
   }
 
   switchScheme(){
     this.themeService.toggleTheme();
-    console.log(this.isMale)
+    //console.log("from switching: " + this.isMale)
   }
 
 }

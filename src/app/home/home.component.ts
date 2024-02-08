@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-home',
@@ -8,19 +9,17 @@ import { DataService } from '../services/data.service';
 })
 export class HomeComponent implements OnInit{
 
-  data: any;
+  isMale: boolean;
 
-  constructor(private service: DataService){
+
+  constructor(private themeService: ThemeService){
 
   }
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.service.get().subscribe((response) => {
-      this.data = response
-    })
-
+    this.themeService.isMale$.subscribe(value => this.isMale = value)
   }
 
   

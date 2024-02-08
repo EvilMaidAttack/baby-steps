@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { of, } from 'rxjs';
+import { BehaviorSubject} from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -7,25 +7,15 @@ import { map } from 'rxjs/operators';
 })
 export class ThemeService {
 
-  private isMale = of(false);
+  private isMaleSubject = new BehaviorSubject<boolean>(false)
+  isMale$ = this.isMaleSubject.asObservable();
 
   toggleTheme(){
-    this.isMale.pipe(map(
-      (isMale) => !isMale
-    )).subscribe(
-      (newValue) => {
-        this.isMale = of(newValue);
-        console.log("from service: "+ newValue);  
-      }
-    )
+    let newValue = false;
+    this.isMale$.subscribe(value => newValue = !value)
+    this.isMaleSubject.next(newValue);
   }
 
-  getIsMale(){
-    this.isMale.subscribe(v => {
-      console.log("from function getIsMale: " + v);
-    })
 
-    return this.isMale;    
-  }
 
 }
