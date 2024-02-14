@@ -1,7 +1,9 @@
+@import "../../component-styler.css";
+
 div.container {
     display: block;
     text-align: center;
-    max-width: 50%;
+    max-width: 520px;
 }
 
 .card {
@@ -29,4 +31,6 @@ form {
 .form-group {
     margin-bottom: 25px;
 }
+
+
 

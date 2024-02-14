@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container" [class.isMale]="isMale">
     <div class="card">
         <div class="card-body">
 
             <div>
-                <img src="../assets/img/logo.png" class="img-fluid logo">
+                <img src="../assets/img/logo.png" class="img-fluid logo" width="200" heigth="200">
             </div>
 
             <form #f="ngForm" (ngSubmit)="debug(f)" >
@@ -18,10 +18,7 @@
                     <input ngModel name="password" id="password" type="password" class="form-control">
                 </div>
         
-                <button type="submit" class="btn btn-primary">Sign in</button>
-                <p>
-                    {{f.value | json}}
-                </p>
+                <button type="submit" class="btn-form">Sign in</button>
             </form>
 
         </div>

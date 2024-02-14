@@ -1,0 +1,73 @@
+/*  --------------------- GENERAL --------------------- */
+.isMale {
+    --color-theme-border: var(--color-boy-blue-border);
+    --color-theme-background: var(--color-boy-background);
+    --color-theme-text: var(--color-boy-blue-text);
+}
+
+
+/*  --------------------- BUTTONS --------------------- */
+.btn-standard {
+    position: relative;
+    border: 2px solid var(--color-theme-border);
+    border-radius: 100vh;
+    padding: 5px 10px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-theme-text);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.btn-standard:hover {
+    color: var(--color-theme-white);
+    box-shadow: 0 0px 20px var(--color-theme-border);
+    scale: 1.1;
+}
+
+.btn-standard::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    inset: 0;
+    margin: auto;
+    z-index: -1;
+    background-color: var(--color-theme-border);
+    scale: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: inherit;
+}
+
+.btn-standard:hover::before {
+    scale: 2;
+}
+
+
+.btn-form {
+    position: relative;
+    border: 2px solid var(--color-theme-border);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-theme-text);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.btn-form:hover {
+    background-color: var(--color-theme-border);
+    color: var(--color-theme-white);
+    box-shadow: 0 0px 20px var(--color-theme-border);
+    scale: 1.1;
+}
+
+.btn-form:active {
+    scale: 1;
+}
+
+
+
