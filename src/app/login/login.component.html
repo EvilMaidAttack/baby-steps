@@ -6,11 +6,11 @@
                 <img src="../assets/img/logo.png" class="img-fluid logo" width="200" heigth="200">
             </div>
 
-            <form #f="ngForm" (ngSubmit)="signIn()" >
+            <form #f="ngForm" (ngSubmit)="signIn(f)" >
             
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input ngModel name="username" id="username" #firstName="ngModel" type="text" class="form-control">
+                    <label for="email">E-Mail</label>
+                    <input ngModel name="email" id="email" type="text" class="form-control">
                 </div>
             
                 <div class="form-group">

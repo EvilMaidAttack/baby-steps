@@ -10,10 +10,6 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit{
 
   isMale: boolean;
-  signInData = {
-    email: "masarh@test.com",
-    password: "test123"
-  };
 
   constructor(private themeService: ThemeService, private authService: AuthenticationService){
 
@@ -23,8 +19,8 @@ export class LoginComponent implements OnInit{
       this.themeService.isMale$.subscribe(value => this.isMale = value);
   }
 
-  signIn(){
-    this.authService.signin(this.signInData).subscribe(response => console.log(response))
+  signIn(data){
+    this.authService.signin(data.value).subscribe(response => console.log(response))
   }
 
   debug(x){
